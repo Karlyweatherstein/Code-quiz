@@ -79,3 +79,10 @@
   border-color: black;
   border-width: 3px;
 }
+
+/* Submit box */
+
+#submitScore {
+  color: white;
+  background-color: #2f1571;
+}

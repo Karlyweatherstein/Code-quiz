@@ -16,7 +16,7 @@
     <section class="nav-bar container text-center">
       <div class="row">
         <div class="high-scores col-6">
-          <button type="button">View High Scores</button>
+          <button type="button" id="showScoresButton">View High Scores</button>
         </div>
         <div class="col-6">
           <h4>Time: <span id="timer"></span></h4>
@@ -53,6 +53,12 @@
       <div class="controls">
         <button id="next-btn" class="next-btn btn hide btn-lg">Next</button>
       </div>
+    </div>
+
+    <div id="scoreArea" class="hide">
+      <span id="scoreDisplay"></span>
+      <input type="text" name="initials" id="initials" />
+      <button type="button" class="submit" id="submitScore">Submit</button>
     </div>
 
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
