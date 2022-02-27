@@ -32,13 +32,15 @@ var questionEl = document.getElementById("question")
 var answerButtonsEl = document.getElementById("answer-button")
 var shuffledQuestions, currentQuestionIndex
 
+
+// Listens for a click on the start button and also the 'next' button
 startButton.addEventListener("click", startGame)
 nextButton.addEventListener("click", () => {
     currentQuestionIndex++
     nextQuestion()
 })
 
-
+// once the start button is selected it hides the instructions and shows the question box layout
 function startGame() {
     startButton.classList.add("hide")
     hideExtraInfo.classList.add("hide")
@@ -105,6 +107,8 @@ function clearStatusClass(element) {
 
 }
 
+
+// Array of my questions and answer choices
 var questions = [
     {
         question: "Commonly used data types DO not include:",
@@ -115,5 +119,37 @@ var questions = [
             {text: "4. Numbers", correct: false},
 
         ]
+    },
+    {
+        question: "The condition in an if / else statement is enclosed with ______",
+        answers: [
+            {text: "1. Parenthesis", correct: true},
+            {text: "2. Curly brackets", correct: false},
+            {text: "3. Quotes", correct: false},
+            {text: "4. Square Brackets", correct: false},
+
+        ]
+    },
+    {
+        question: "Arrays in JavaScript can be used to store_____",
+        answers: [
+            {text: "1. Numbers and strings", correct: false},
+            {text: "2. Booleans", correct: false},
+            {text: "3. Other arrays", correct: false},
+            {text: "4. All of the above", correct: true},
+
+        ]
+    },
+    {
+        question: "String values must be enclosed within _____ when being assigned to variables.",
+        answers: [
+            {text: "1. Commas", correct: false},
+            {text: "2. Curly brackets", correct: false},
+            {text: "3. Quotes", correct: true},
+            {text: "4. Parenthesis", correct: false},
+
+        ]
     }
 ]
+
+// Game end
