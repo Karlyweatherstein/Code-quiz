@@ -19,3 +19,50 @@
 .instructions div p {
   font-size: larger;
 }
+
+.question-box {
+  display: flex;
+  width: 40vw;
+  height: 30vw;
+  justify-content: center;
+  align-items: center;
+}
+
+#answer-button button.correct {
+  background-color: green;
+}
+
+#answer-button button.wrong {
+  background-color: rgb(173, 92, 92);
+}
+
+#question {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+#next-btn {
+  background-color: lavender;
+}
+
+#answer-button button {
+  display: block;
+  color: white;
+  background-color: #2f1571;
+  align-items: center;
+  margin: 3px;
+  justify-content: space-between;
+  font-size: 24px;
+  border-radius: 10px;
+  width: 50vw;
+  text-align: left;
+}
+
+#answer-button button:hover {
+  border-color: black;
+  border-width: 3px;
+}
+
+.hide {
+  display: none;
+}

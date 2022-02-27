@@ -26,8 +26,8 @@
     <!-- Main part of the page -->
     <header class="instructions">
       <div class="text-center">
-        <h1 class="font-weight-bold">Coding Quiz Challenge</h1>
-        <p class="px-5 mb-4">
+        <h1 class="font-weight-bold mt-5 mb-3">Coding Quiz Challenge</h1>
+        <p class="px-5 mb-4" id="hide-this">
           Try to answer the following code-related questions within the time
           limit. Keep in mind that incorrect answers will penalize your
           score/time by ten seconds!
@@ -40,7 +40,25 @@
       </div>
     </header>
 
-    <!-- <section></section> -->
+    <div class="container question-box">
+      <div id="question-container" class="hide">
+        <div id="question">Questions</div>
+        <div id="answer-button" class="btn-grid">
+          <button>Answer 1</button>
+          <button>Answer 2</button>
+          <button>Answer 3</button>
+          <button>Answer 4</button>
+        </div>
+      </div>
+      <div class="controls hide">
+        <button id="next-btn" class="next-btn btn">Next</button>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="./assets/script.js"></script>
   </body>
 </html>
+
+<!-- onclick="location.href='./game.HTML'" -->
