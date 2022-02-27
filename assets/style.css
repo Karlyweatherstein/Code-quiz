@@ -1,0 +1,21 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.high-scores button {
+  color: #cb7eec;
+  border: none;
+  text-decoration: none;
+  padding: 0;
+  background: none;
+  outline: none;
+}
+
+#start-btn button {
+  background-color: #2f1571;
+  color: white;
+}
+
+.instructions div p {
+  font-size: larger;
+}

@@ -4,8 +4,43 @@
     <meta charset="UTF-8" />
     <title>Code Quiz!</title>
     <link rel="stylesheet" href="./assets/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
-    body
+    <!-- High scores and timer -->
+    <section class="nav-bar container text-center">
+      <div class="row">
+        <div class="high-scores col-6">
+          <button type="button">View High Scores</button>
+        </div>
+        <div class="col-6">
+          <h4>Time: <span id="timer"></span></h4>
+        </div>
+      </div>
+    </section>
+    <!-- Main part of the page -->
+    <header class="instructions">
+      <div class="text-center">
+        <h1 class="font-weight-bold">Coding Quiz Challenge</h1>
+        <p class="px-5 mb-4">
+          Try to answer the following code-related questions within the time
+          limit. Keep in mind that incorrect answers will penalize your
+          score/time by ten seconds!
+        </p>
+      </div>
+      <div id="start-btn" class="text-center">
+        <button type="button" id="start" class="btn-lg rounded-lg">
+          Start Quiz
+        </button>
+      </div>
+    </header>
+
+    <!-- <section></section> -->
+    <script src="./assets/script.js"></script>
   </body>
 </html>
