@@ -70,6 +70,7 @@ function showQuestion(question) {
 }
 
 function resetState() {
+    clearStatusClass(document.body)
     nextButton.classList.add("hide")
     while (answerButtonsEl.firstChild) {
         answerButtonsEl.removeChild(answerButtonsEl.firstChild)
@@ -149,7 +150,8 @@ var questions = [
             {text: "4. Parenthesis", correct: false},
 
         ]
-    }
-]
+    },
+    
+];
 
 // Game end

@@ -42,7 +42,8 @@
 }
 
 #next-btn {
-  background-color: lavender;
+  background-color: #2f1571;
+  color: white;
 }
 
 #answer-button button {
@@ -65,4 +66,13 @@
 
 .hide {
   display: none;
+}
+
+#question-container {
+  width: 60vw;
+}
+
+#next-btn:hover {
+  border-color: black;
+  border-width: 3px;
 }
