@@ -1,21 +1,27 @@
 // Timer start
 function startTimer(){
+    console.log(startTimer)
     var counter = 60;
     setInterval(function() {
       counter--;
-      if (counter >= 0) {
+    if (counter >= 0) {
         span = document.getElementById("timer");
         span.innerHTML = counter;
-      }
-      else if (counter === 0) {
-          alert('Out of time!');
-          clearInterval(counter);
-      }
+    }
+    else if (counter === 0) {
+        alert('Out of time!');
+        clearInterval(counter);
+    }
     }, 1000);
-  }
+    console.log(counter)
+}
+
 function countdown() {
+    
     startTimer();
 };
+
+
 
 document.getElementById("start").addEventListener("click", startTimer);
 
@@ -71,7 +77,6 @@ function showQuestion(question) {
 
 function resetState() {
     clearStatusClass(document.body)
-    nextButton.classList.add("hide")
     while (answerButtonsEl.firstChild) {
         answerButtonsEl.removeChild(answerButtonsEl.firstChild)
     }
@@ -108,6 +113,20 @@ function clearStatusClass(element) {
 
 }
 
+// Subtract 10 seconds for every wrong answer
+
+function timerPenalty() {
+   if(answer === correct) {
+    window.alert("You dont lose time");
+    
+   } else {
+    window.alert("You lose 10 seconds haha");
+    startTimer.counter -= 10;
+   }
+   
+   timerPenalty()
+
+}
 
 // Array of my questions and answer choices
 var questions = [
@@ -153,5 +172,6 @@ var questions = [
     },
     
 ];
+
 
 // Game end

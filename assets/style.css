@@ -44,6 +44,7 @@
 #next-btn {
   background-color: #2f1571;
   color: white;
+  transform: translateY(150%);
 }
 
 #answer-button button {
@@ -69,7 +70,9 @@
 }
 
 #question-container {
-  width: 60vw;
+  width: 50vw;
+  transform: translateY(30%);
+  margin: 8px;
 }
 
 #next-btn:hover {
